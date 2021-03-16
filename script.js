@@ -1,8 +1,9 @@
-var num = [1,2,3,4]
+function myFunction() {
 
-console.log(num[2])
+    var base_url = "http://127.0.0.1:5500/"
+    var page = document.getElementById("myBtn").value
 
-for (let i = 0; i < num.length; i++) {
-    const element = num[i];
-    console.log(i,element)
+    var full_path = base_url.concat(page,'.html')
+    
+    document.getElementById("myBtn").onclick = window.location.href = full_path;
 }
