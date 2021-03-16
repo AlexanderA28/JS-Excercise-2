@@ -24,14 +24,33 @@
         <div class="col-12" align="center">
           <p style="color: red; font-size: 50px">Services</p>
         </div>
-
         <div class="col-6">
           <button
-            id="myBtn"
+            id="home"
+            type="button"
+            value="index"
+            class="btn btn-primary mr-2 p-1"
+            onclick="myFunction(this.id)"
+          >
+            Home
+          </button>
+
+          <button
+            id="about"
+            type="button"
+            class="btn btn-primary mr-2 p-1"
+            value="about"
+            onclick="myFunction(this.id)"
+          >
+            About
+          </button>
+
+          <button
+            id="services"
             type="button"
             class="btn btn-primary mr-2 p-1"
             value="services"
-            onclick="myFunction()"
+            onclick="myFunction(this.id)"
           >
             Services
           </button>
