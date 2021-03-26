@@ -11,6 +11,7 @@ function myFunction(clicked_id) {
 function divide_by_3() {
 
     var divisible_by_3 = []
+//  Use counter -- save memory and more optimized
 
     for (let i = 1; i < 101; i++) {
         if (i % 3 == 0) {
@@ -20,6 +21,7 @@ function divide_by_3() {
 
     console.log(divisible_by_3.length)
     document.getElementById('output').innerHTML = divisible_by_3.length;
+    alert('hello')
 
 }
 
