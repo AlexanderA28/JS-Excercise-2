@@ -56,8 +56,19 @@ function timer() {
                 }
                 
             }, 1000);
+}
 
 
 
-        
+function bands() {
+
+    band_choices = ['Band A', 'Band B', 'Band C', 'Band d', 'Band e']
+    let choice = prompt('What is your favorite band?');
+
+    if (band_choices.indexOf(choice,0) !== -1)  {
+        alert("YEAH I LOVE THEM!")
+    } else {
+        alert("Nah. They're pretty lame.")
+    }
+  
 }
