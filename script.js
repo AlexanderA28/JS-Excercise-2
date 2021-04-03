@@ -62,10 +62,10 @@ function timer() {
 
 function bands() {
 
-    band_choices = ['Band A', 'Band B', 'Band C', 'Band d', 'Band e']
+    band_choices = ['Band A', 'Band B', 'Band C', 'Band d', 'Band e'].map(v => v.toLowerCase());
     let choice = prompt('What is your favorite band?');
 
-    if (band_choices.indexOf(choice,0) !== -1)  {
+    if (band_choices.indexOf(choice.toLowerCase(),0) !== -1)  {
         alert("YEAH I LOVE THEM!")
     } else {
         alert("Nah. They're pretty lame.")
