@@ -51,6 +51,7 @@ function timer() {
                 
                 start_num -= 1;
                 document.getElementById("countdown").textContent = start_num;
+
                 if (start_num <= 0) {
                     clearInterval(interval)
                 }
@@ -65,10 +66,19 @@ function bands() {
     band_choices = ['Band A', 'Band B', 'Band C', 'Band d', 'Band e'].map(v => v.toLowerCase());
     let choice = prompt('What is your favorite band?');
 
-    if (band_choices.indexOf(choice.toLowerCase(),0) !== -1)  {
+    if (band_choices.indexOf(choice.toLowerCase()) !== -1)  {
         alert("YEAH I LOVE THEM!")
     } else {
         alert("Nah. They're pretty lame.")
     }
   
+}
+
+
+function songs() {
+    
+    songs_list = ['Song A', 'Song B', 'Song C', 'Song D', 'Song E']
+
+    alert(songs_list[Math.floor(Math.random() * (songs_list.length -1))]);
+
 }
