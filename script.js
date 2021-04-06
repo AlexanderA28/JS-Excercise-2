@@ -82,3 +82,14 @@ function songs() {
     alert(songs_list[Math.floor(Math.random() * (songs_list.length -1))]);
 
 }
+
+
+function fizzbuzz() {
+n = 15
+
+num_list = []
+
+while num_list[-1]
+
+
+}
