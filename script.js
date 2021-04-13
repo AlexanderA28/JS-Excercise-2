@@ -85,11 +85,15 @@ function songs() {
 
 
 function fizzbuzz() {
-n = 15
 
-num_list = []
+let num_list = []
 
-while num_list[-1]
+const  n = 15
+let start = 0 
+
+while (i < n) {
+    num_list.push(i ++)
+}
 
 
 }
